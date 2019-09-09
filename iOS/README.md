@@ -4,24 +4,19 @@
 
 ## <u>Roadmap</u>
 
-- [ ] Release iOS v1.0 ***in progress***
+- [x] Submit v1.0
+- [ ] Release v1.0 ***awaiting Apple review***
 
 # Architecture
 - [ ] There's files and folders and shit... More to come here once I get some time to make some nifty diagrams...
 
 ## <u>iOS v1.0</u>
 
-- [ ] Handle weird data sync issues
-- [ ] Localizations
-    - [ ] Romanian
-    - [ ] Czech
-    - [ ] Norwegian
-- [ ] Replace Google Admob Key w/ Real One
-- [ ] App store submission stuff
+- [x] Handle weird data sync issues
+- [x] Replace Google Admob Key w/ Real One
+- [x] App store submission stuff
     - Screenshots
     - App description/copy/tags
-
-### <u>Done</u>
 - [x] Localizations
     - [x] Dutch
     - [x] Italian
@@ -79,11 +74,28 @@
 - [x] Ensure watch an ad - handle not loaded
 - [x] Fix any broken autolayout constraints
 
+## Pre-release Checklist
+- [ ] Update Localizations
+- [ ] Check any TODOs
+- [ ] Update screenshots?
+- [ ] Write 'whats new in this version'
+- [ ] Ensure all keys are updated with production keys
+    - [ ] Google Ad Mob
+- [ ] Update attributions
 
 ## <u>v1.1</u>
-- Favoriting Items
+- Global metrics
+    - Total ads watched count
+    - Total supporters
+    - Leaderboards
+- Survival rate calculator
+    - Survival rate
+    - Investment per run
+    - Total earned per run
+- Change upcoming features blog post to news / updates
 - Additional Info to Existing Items:
-    - Mods -> Firearms 
+    - Compatible Mods on Firearms
+    - Related items feed
 - Add New Item Types
     - Helmets and accessories
     - Headphones
@@ -92,47 +104,35 @@
         - See all attachments that fits on it
         - See all mods it can attach to
         - See all mods it conflicts with 
-- Health Calculator Improvements
-    - Add fragmentation toggle
-    - Armor Zones
+- Support
+    - Banner ads
+    - IAP
+    - Leaderboard Integration
+- Attributions Additions
+    - SmooothBrain for design work
+- Add ? info to health calculator
+- Add ? info to comparison screen
 - Penetration Calculator Improvements
     - Helmets/face shields/mods
     - Armored Rigs + Multi-layer support to ballistics calc
-- Survival rate calculator
-    - Survival rate
-    - Investment per run
-    - Total earned per run
-- Global metrics
-    - Total ads watched count
-    - Total supporters
-    - Leaderboards
-- In app purchases for supporters
-- Support
-    - Banner ads
-    - Supporter mode - IAP
-- More info to future features blog post
-- Skills and how to level them
+
+## <u>v1.2</u>
+- Health Calculator Improvements
+    - Add fragmentation toggle
+    - Armor Zones
+- Display shot result
 - News/changelog
-    - BSG Twitter Feed
-- Ballistics Simulation
-    - Choose armor (and rig), choose round, fire shot, show result of shot (pen, armor damage, flesh damage, blunt damage, fragmentation)
-- Exchange rate calculator
-- Choose gun
-    - See available parts
-    - Max ergo
-    - Min recoil
-- Attributions Additions
-    - SmooothBrain for design work 
-- Item details additions
-    - Related items feed
-- Add ? info to health calculator
+- BSG Twitter Feed
+- Skills and how to level them
 - Comparison Screen Improvements
-    - Add ? info to comparison screen
     - Revisit range again
     - Color scheme preference, gradient, black/white, highlight best/worst?
-    
-    
-## <u>v1.2</u>
+- Favoriting Items
+- Firearm building
+    - Custom
+    - Max ergo
+    - Min recoil
+    - Random
 - Nuke UIKit to the ground; Foundation FTW
 - V-Harmony Item Matchmaker (play on e-harmony)
     - Select the type (gun, armor, helmet to start)

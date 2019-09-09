@@ -59,14 +59,14 @@ class FirebaseManager: NSObject {
 
         super.init()
 
-        let filePath = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist")
-        guard let options = FirebaseOptions(contentsOfFile: filePath!)
-            else { fatalError("Couldn't load config file! I gotta make this work for staging environment... SoonTM") }
-        FirebaseApp.configure(options: options)
-        GADMobileAds.sharedInstance().start(completionHandler: nil)
+        FirebaseApp.configure()
 
+        // Uncomment this out for debugging purposes.
+//        FirebaseConfiguration.shared.setLoggerLevel(.max)
         videoAd.delegate = self
-        reloadVideoAd()
+        GADMobileAds.sharedInstance().start { _ in
+            self.reloadVideoAd()
+        }
     }
 
     // MARK:- Images
@@ -179,7 +179,7 @@ extension FirebaseManager: GADRewardBasedVideoAdDelegate {
     func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd, didFailToLoadWithError error: Error) {
         print("AD FAILED!: \(error.localizedDescription)")
         updateAdState(state: .unavailable)
-        reloadVideoAd(after: 5)
+        reloadVideoAd(after: 15)
     }
 
     func rewardBasedVideoAdDidReceive(_ rewardBasedVideoAd: GADRewardBasedVideoAd) {

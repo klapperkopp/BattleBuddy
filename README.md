@@ -1,7 +1,7 @@
 #  Battle Buddy
 ### The Unofficial [Escape from Tarkov](http://www.escapefromtarkov.com) Reference App
 
-![App Preview](Screenshots/app_preview.jpg "App Preview")
+![App Preview](Screenshots/banner.jpg "App Preview")
 
 Concept and development brought to you by [Veritas](http://www.twitch.tv/veritas), with loads of help from his and the greater EFT Community!
 
@@ -21,8 +21,8 @@ Concept and development brought to you by [Veritas](http://www.twitch.tv/veritas
 
 ## <u>Backend v1.0</u>
 
-- [ ] Remote functions deployed
+- [x] Remote functions deployed
 - [x] Fold server
-- [ ] item update/syncing (every 60 mins)
+- [x] user/item update/syncing (every 60 mins)
 - [ ] Total user count cache (every 5 mins?)
 - [ ] Total ads watched cache (every 5 mins?)
